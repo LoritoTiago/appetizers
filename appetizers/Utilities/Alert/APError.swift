@@ -14,3 +14,4 @@ enum APError: Error{
     case invalidData
     case UnableToComplete
 }
+
