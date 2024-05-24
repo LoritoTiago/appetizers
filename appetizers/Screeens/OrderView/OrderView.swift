@@ -22,15 +22,17 @@ struct OrderView: View {
                             AppetizerListCell(apptizer: appetizer)
                             
                         }
-                        .onDelete(perform: deleteItem)
+                        .onDelete(perform:order.deleteItem)
                     }
                     .listStyle(PlainListStyle())
                     
                     Button{
                         print("Order Placed")
                     }label: {
-                        APButton(title: "$99.99 - Place Order")
+                        
+                        Text( "$\(order.totalPrice,specifier: "%.2f") - Place Order")
                     }
+                    .modifier(StandardButtonStyle())
                     .padding(.bottom, 25)
                 }
                 
@@ -46,9 +48,7 @@ struct OrderView: View {
         
     }
     
-    func deleteItem(atoffesets: IndexSet){
-        order.items.remove(atOffsets: atoffesets)
-    }
+    
 }
 
 #Preview {

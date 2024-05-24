@@ -32,6 +32,7 @@
 		DA1767202C00B4CB00D2A02C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA17671F2C00B4CB00D2A02C /* User.swift */; };
 		DA1767232C00BC3200D2A02C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767222C00BC3200D2A02C /* EmptyState.swift */; };
 		DA1767252C00C26800D2A02C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767242C00C26800D2A02C /* Order.swift */; };
+		DA1767272C00D66C00D2A02C /* CustomMotifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1767262C00D66C00D2A02C /* CustomMotifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		DA17671F2C00B4CB00D2A02C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DA1767222C00BC3200D2A02C /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		DA1767242C00C26800D2A02C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		DA1767262C00D66C00D2A02C /* CustomMotifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMotifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				DA17670F2BFCCC1E00D2A02C /* UIKit Components */,
 				DA17670E2BFCCC1400D2A02C /* Cells */,
 				DA17670D2BFCCC0D00D2A02C /* Image */,
+				DA1767262C00D66C00D2A02C /* CustomMotifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				DA1766EF2BFB5A0200D2A02C /* OrderView.swift in Sources */,
 				DA17671C2BFCE1E400D2A02C /* Date+Ext.swift in Sources */,
 				DA1767252C00C26800D2A02C /* Order.swift in Sources */,
+				DA1767272C00D66C00D2A02C /* CustomMotifiers.swift in Sources */,
 				DA1767202C00B4CB00D2A02C /* User.swift in Sources */,
 				DA1767232C00BC3200D2A02C /* EmptyState.swift in Sources */,
 			);

@@ -22,12 +22,18 @@ struct AppetizerListView: View {
             NavigationView{
                 List(viewModel.appetizers){appetizer in
 
-                    AppetizerListCell(apptizer:appetizer ).onTapGesture {
+                    AppetizerListCell(apptizer:appetizer )
+                        //.listRowSeparator(.hidden)
+                        //.listRowSeparatorTint(.brandPrimary)
+                        .onTapGesture {
                         viewModel.isShowingDetail = true
                         viewModel.selectedAppetizer = appetizer
                     }
                     
-                }.navigationTitle("🍟 Appetizers")
+                }
+                
+                .navigationTitle("🍟 Appetizers")
+                .listStyle(.plain)
                     .disabled(viewModel.isShowingDetail)
                 
             }
