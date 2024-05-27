@@ -17,6 +17,19 @@ struct StandardButtonStyle: ViewModifier{
 }
 
 
+
+
+
+extension Image{
+    func customImageModifier() -> some View{
+        self
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 120, height: 90)
+    }
+}
+
+
 extension View{
     func standardButtonStyle() -> some View{
         self.modifier(StandardButtonStyle())

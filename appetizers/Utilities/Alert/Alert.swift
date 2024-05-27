@@ -36,6 +36,10 @@ struct AlertContext{
                                            message:Text("Unable to complete your request at this time"),
                                            dismissButton: .default(Text("Ok")))
     
+    static let genericError = AlertItem(title: Text("Server Error"),
+                                           message:Text("Unable to complete your request"),
+                                           dismissButton: .default(Text("Ok")))
+    
     
     
     

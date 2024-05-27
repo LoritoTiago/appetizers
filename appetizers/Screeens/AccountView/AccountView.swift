@@ -65,7 +65,17 @@ struct AccountView: View {
                 }
                 .toggleStyle(SwitchToggleStyle(tint: .brandPrimaryC))
                
-            }.navigationTitle("🤣 Account")
+            }
+            .navigationTitle("🤣 Account")
+            .toolbar{
+                ToolbarItemGroup(placement: .keyboard){
+                    Button{
+                        focusedTextField = nil
+                    }label: {
+                        Text("Dismiss")
+                    }
+                }
+            }
             
             
         }
